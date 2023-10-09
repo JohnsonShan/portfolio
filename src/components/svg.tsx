@@ -2,7 +2,6 @@
 import { jsx } from "theme-ui"
 import { withPrefix } from "gatsby"
 import { hidden } from "../styles/utils"
-
 type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross"
 
 type SVGProps = {
