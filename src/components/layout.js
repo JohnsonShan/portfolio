@@ -7,15 +7,34 @@ import Nav from './nav'
 import Background from './background'
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div >
-      {/* <Background></Background> */}
-
-      <Container>
-        <Nav/>
-        <Container px={4}>
-          {children}
+    <div sx={{
+      position: 'relative',
+    }}>
+      <div sx={{
+        zIndex: -100,
+        position: 'absolute',
+        top: 0,
+        left: 0,
+      }}>
+        <Background />
+      </div>
+      <div sx={{
+        zIndex: 100,
+        position: 'relative'
+      }}>
+        <Container >
+          <Nav />
+          <Container sx={{
+            alignItems: 'center',
+            maxWidth: '800px',
+            margin: 'auto',
+            paddingX: 2
+          }}>
+            {children}
+          </Container>
         </Container>
-      </Container>
+      </div>
+
 
 
     </div>

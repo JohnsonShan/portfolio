@@ -157,7 +157,7 @@ const theme = merge(tailwind, {
   },
   cards: {
     primary: {
-      padding: 2,
+      padding: 1,
       margin: 2,
       borderRadius: 4,
       boxShadow: '0 0 8px rgba(0, 0, 0, 0.125)',
