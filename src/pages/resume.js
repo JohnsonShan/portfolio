@@ -16,7 +16,7 @@ const ResumePage = () => {
                 <h1 sx={{
                 }}>Resume.</h1>
                 <Card>
-                    <embed src={'https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/JohnsonShan/others/main/johnson-shan-resume-P-2-10-23.pdf'} width="100%" height="800px" />
+                    <embed src={'https://drive.google.com/viewerng/viewer?embedded=true&url=https://lustrous-torte-4c1709.netlify.app/johnson-shan-resume-P-2-10-23.pdf'} width="100%" height="800px" />
 
                 </Card>
 
