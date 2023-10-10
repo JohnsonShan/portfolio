@@ -14,7 +14,6 @@ const ResumePage = () => {
         <Layout>
             <Box sx={{
                 alignItems: 'center',
-                maxWidth: '600px',
                 margin: 'auto',
                 minHeight: '1000px'
             }}>

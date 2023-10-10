@@ -5,6 +5,7 @@ import { Container, Flex, Box, NavLink } from 'theme-ui'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Nav from './nav'
 import Background from './background'
+import Footer from './footer'
 const Layout = ({ pageTitle, children }) => {
   return (
     <div sx={{
@@ -31,6 +32,7 @@ const Layout = ({ pageTitle, children }) => {
             paddingX: 2
           }}>
             {children}
+            {/* <Footer /> */}
           </Container>
         </Container>
       </div>

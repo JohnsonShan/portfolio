@@ -13,7 +13,7 @@ const Seo = ({ title }) => {
   // `)
 
   return (
-    <title>{title} | Johnson Shan portfolio</title>
+    <title>{title} | Johnson Shan | Portfolio</title>
   )
 }
 
