@@ -15,25 +15,29 @@ const ProjectsPage = () => {
         sx={{
           display: 'grid',
           gridGap: 1, // theme.space[4]
-        //   // use arrays for mobile-first responsive styles
+          //   // use arrays for mobile-first responsive styles
           gridTemplateColumns: [
             'auto', // default to a stacked layout on small screens
             // '1fr 256px', // use columns for larger screens
           ],
         }}>
         <Box >
-          <NavLink href="#" target="_blank">
+          <NavLink variant='card' href="#" target="_blank">
+            <Card >
+              <Image variant='card' src='/images/portfolio.gif' />
+              {/* <Text>Portfolio</Text> */}
+            </Card>
+          </NavLink>
+          <NavLink variant='card' href="#" target="_blank">
             <Card>
-              <StaticImage src='../../images/todomobileui.png' />
-              <Text>To Do</Text>
+              <Image variant='card' src='/images/todomobileui.png' />
             </Card>
           </NavLink>
         </Box>
         <Box >
-          <NavLink href="#" target="_blank">
+          <NavLink variant='card' href="#" target="_blank">
             <Card>
-              <StaticImage src='../../images/myShop.png' />
-              <Text>My shop</Text>
+              <Image variant='card' src='/images/myShop.png' />
             </Card>
           </NavLink>
         </Box>

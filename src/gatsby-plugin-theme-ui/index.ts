@@ -162,6 +162,18 @@ const theme = merge(tailwind, {
       borderRadius: 4,
       boxShadow: '0 0 8px rgba(0, 0, 0, 0.125)',
     },
+  },
+  images: {
+    card: {
+      width: '100%',
+      height: 'auto'
+    }
+  },
+  links: {
+    card: {
+      width: '100%',
+      height: 'auto'
+    }
   }
 })
 

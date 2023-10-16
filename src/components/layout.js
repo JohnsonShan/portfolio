@@ -19,23 +19,31 @@ const Layout = ({ pageTitle, children }) => {
       }}>
         <Background />
       </div>
-      <div sx={{
+      <Container sx={{
         zIndex: 100,
-        position: 'relative'
+        position: 'relative',
+        maxWidth: '1000px',
       }}>
-        <Container >
-          <Nav />
-          <Container sx={{
-            alignItems: 'center',
-            maxWidth: '800px',
-            margin: 'auto',
-            paddingX: 2
+        <Nav />
+        <Container sx={{
+          alignItems: 'center',
+          maxWidth: '800px',
+          margin: 'auto',
+          paddingX: 2
+        }}>
+          <Box sx={{
+            minHeight: 'calc(100vh - 20vh)',
+            paddingBottom: '50px',
+            [`@media screen and (min-width: 600px)`]: {
+              margin: '0 auto -20vh',
+              paddingBottom: '20vh',
+            },
           }}>
             {children}
-            {/* <Footer /> */}
-          </Container>
+          </Box>
+          <Footer />
         </Container>
-      </div>
+      </Container>
 
 
 

@@ -8,12 +8,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Nav = () => (
     <Container py={2} px={2} >
         <Flex>
-            <Box p={2} sx={{ flex: '1 1', display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ flex: '1 1', display: 'flex', alignItems: 'center' }}>
                 <NavLink href="/" p={2}>
                     <FontAwesomeIcon icon={faRobot} size="3x" />
                 </NavLink>
             </Box>
-            <Box p={2} sx={{ display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <Flex as="nav">
                     <NavLink href="/" p={2}>
                         Home

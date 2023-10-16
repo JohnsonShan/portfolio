@@ -6,6 +6,9 @@ import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { faLinkedinIn, faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Forward } from "../styles/animations"
 
@@ -19,10 +22,12 @@ const IndexPage = () => {
         <p>A highly experienced Software Engineer based in Toronto, Ontario, Canada. With a strong background in software development, I specialize in creating a wide range of applications, including both Frontend and Backend projects, Cloud hosting solutions, and CICD DevOps pipelines.</p>
         <p>Passionate about innovation, I am constantly exploring cutting-edge technologies and finding optimized solutions to complex technical problems. I thrive on the challenge of creating user-centric solutions that not only enhance the overall user experience but also drive business growth.</p>
         <p>Beyond my professional endeavors, I find joy in pursuing various hobbies and activities. When I'm not engrossed in coding, you'll often find me immersed in the pages of a captivating novel, honing my skills on the badminton court, or enjoying quality time with my friends. Additionally, I am a guitar player and have been dedicating considerable time and effort to practice. I am eagerly anticipating the release of a guitar cover video in the near future.</p>
-        <p>View my works <Forward/></p>
-
+        <NavLink href="/projects" p={0}>
+          To Projects  <FontAwesomeIcon sx={{pl:1}} icon={faArrowRight} />
+          {/* <Forward /> */}
+        </NavLink>
         <Box sx={{
-          my: 4
+          my: 3
         }}>
           <NavLink href="https://www.linkedin.com/in/johnson-shan-b9a373168/" target="_blank">
             <FontAwesomeIcon icon={faLinkedinIn} size="2x" sx={{ pr: 4, }} />
