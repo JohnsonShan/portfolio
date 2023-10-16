@@ -9,7 +9,7 @@ const ProjectsPage = () => {
   return (
     <Layout>
       {/* <Box > */}
-      <h1>Projects.(Pending)</h1>
+      <h1>Projects.</h1>
       <Grid
         columns={[2, '1fr 1fr']}
         sx={{
