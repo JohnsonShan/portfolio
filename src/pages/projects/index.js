@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Grid, Card, Image, Text, Container, Flex, Box, NavLink } from 'theme-ui'
+import { Badge, Grid, Card, Image, Text, Container, Flex, Box, NavLink } from 'theme-ui'
 import Layout from '../../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../../components/seo'
-
+import ProjectCard from '../../components/projectCard'
 const ProjectsPage = () => {
   return (
     <Layout>
@@ -21,26 +21,32 @@ const ProjectsPage = () => {
             // '1fr 256px', // use columns for larger screens
           ],
         }}>
-        <Box >
-          <NavLink variant='card' href="#" target="_blank">
-            <Card >
-              <Image variant='card' src='/images/portfolio.gif' />
-              {/* <Text>Portfolio</Text> */}
-            </Card>
-          </NavLink>
-          <NavLink variant='card' href="#" target="_blank">
-            <Card>
-              <Image variant='card' src='/images/todomobileui.png' />
-            </Card>
-          </NavLink>
-        </Box>
-        <Box >
-          <NavLink variant='card' href="#" target="_blank">
-            <Card>
-              <Image variant='card' src='/images/myShop.png' />
-            </Card>
-          </NavLink>
-        </Box>
+        <div >
+          <ProjectCard
+            url='https://lustrous-torte-4c1709.netlify.app/'
+            imageUrl='/images/portfolio.gif'
+            title='Portfolio'
+            text='A portfolio page for myself.'
+            badges={['React.js', 'Gatsby', 'Netlify', 'Theme UI']}
+          />
+          <ProjectCard
+            url='#'
+            imageUrl='/images/todomobileui.png'
+            title='To Do List'
+            text='Pending revamp to Board.'
+            badges={['React.js', 'Theme UI']}
+          />
+
+        </div>
+        <div >
+        <ProjectCard
+            url='#'
+            imageUrl='/images/myShop.png'
+            title='J Pizza'
+            text='Pending for revamp.'
+            badges={['React.js', 'Theme UI']}
+          />
+        </div>
       </Grid>
 
       {/* </Box> */}

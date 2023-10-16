@@ -156,23 +156,75 @@ const theme = merge(tailwind, {
     },
   },
   cards: {
-    primary: {
+    project: {
       padding: 1,
       margin: 2,
       borderRadius: 4,
       boxShadow: '0 0 8px rgba(0, 0, 0, 0.125)',
+      position: 'relative',
+      transition: '.5s ease',
+      backgroundColor: 'white',
+      '& .overlay': {
+        top: '50%',
+        backgroundImage: 'linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.8))',
+        opacity: ['0.7','0.7','0']
+      },
+      '& .context': {
+        top: '50%',
+        opacity: ['1','1','0'],
+        display: 'flex',
+        flexDirection: 'column-reverse',
+        paddingBottom: '4em'
+      },
+      '& .image': {
+        opacity: ['0.3','0.3','1'],
+      },
+      '&:hover': {
+        '& .image': {
+          opacity: '0.3',
+        },
+        '& .overlay': {
+          opacity: '0.7',
+        },
+        '& .context': {
+          opacity: '1',
+        },
+      },
     },
   },
   images: {
-    card: {
+    project: {
+      width: '100%',
+      height: 'auto',
+      transition: '.5s ease',
+
+    }
+  },
+  links: {
+    project: {
       width: '100%',
       height: 'auto'
     }
   },
-  links: {
-    card: {
+  boxes: {
+    project: {
+      padding: 4,
+      position: 'absolute',
+      // top: '50%',
+      left: '50%',
+      transition: '.5s ease',
+      transform: 'translate(-50%, -50%)',
+      opacity: 0,
       width: '100%',
-      height: 'auto'
+      height: '100%',
+    }
+  },
+  badges: {
+    project: {
+      padding: 2,
+      marginRight: 2,
+      marginTop: 2,
+      borderRadius: 10
     }
   }
 })
