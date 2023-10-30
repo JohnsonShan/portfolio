@@ -52,7 +52,7 @@ const ContactPage = () => {
                 <h1 sx={{
                 }}>Contact me.</h1>
                 <Card>
-                    <Box as="form" onSubmit={handleSubmit} name='contact-me' data-netlify="true">
+                    <form onSubmit={handleSubmit} name='contact-me' data-netlify="true">
                         <Input type="hidden" name="form-name" value="contact-me" />
                         <Label htmlFor="name">Name</Label>
                         <Input name="name" id="name" required mb={3} value={name} onChange={(e) => { setName(e.target.value) }} />
@@ -61,7 +61,7 @@ const ContactPage = () => {
                         <Label htmlFor="message">Message</Label>
                         <Textarea name="message" id="message" required rows={6} mb={3} value={message} onChange={(e) => { setMessage(e.target.value) }} />
                         <Button type="submit" sx={{ cursor: 'pointer' }}>Submit</Button>
-                    </Box>
+                    </form>
                 </Card>
             </Box>
         </Layout>
