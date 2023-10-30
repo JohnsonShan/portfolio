@@ -24,6 +24,9 @@ const Nav = () => (
                     <NavLink href="/resume" p={2}>
                         Resume
                     </NavLink>
+                    <NavLink href="/contact" p={2}>
+                        Contact
+                    </NavLink>
                 </Flex>
             </Box>
         </Flex>

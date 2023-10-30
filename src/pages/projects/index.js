@@ -8,7 +8,6 @@ import ProjectCard from '../../components/projectCard'
 const ProjectsPage = () => {
   return (
     <Layout>
-      {/* <Box > */}
       <h1>Projects.</h1>
       <Grid
         columns={[2, '1fr 1fr']}
@@ -39,7 +38,7 @@ const ProjectsPage = () => {
 
         </div>
         <div >
-        <ProjectCard
+          <ProjectCard
             url='#'
             imageUrl='/images/myShop.png'
             title='J Pizza'
@@ -49,7 +48,6 @@ const ProjectsPage = () => {
         </div>
       </Grid>
 
-      {/* </Box> */}
     </Layout>
   )
 }

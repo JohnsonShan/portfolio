@@ -19,7 +19,7 @@ const Footer = () => (
             <NavLink href="https://www.linkedin.com/in/johnson-shan-b9a373168/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedinIn} size="2x" sx={{ pr: 3, }} />
             </NavLink>
-            <NavLink href="https://johnsonshan.github.io/">
+            <NavLink href="https://github.com/JohnsonShan">
                 <FontAwesomeIcon icon={faGithub} size="2x" sx={{ px: 3 }} />
             </NavLink>
             <NavLink href="https://twitter.com/shan_johns84215">
