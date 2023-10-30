@@ -12,12 +12,36 @@ import {
     Button,
     Box
 } from 'theme-ui'
+import React, { useState } from 'react';
+import { navigate } from "gatsby"
 
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const ContactPage = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // console.log(name, email, message)
+        const formData = new FormData();
+        formData.append('name', name)
+        formData.append('email', email)
+        formData.append('message', message)
+
+        console.log(new URLSearchParams(formData).toString())
+        console.log('Submitted')
+        
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => navigate("/success/"))
+            .catch((error) => alert(error));
+    }
     return (
         <Layout>
             <Box sx={{
@@ -28,26 +52,18 @@ const ContactPage = () => {
                 <h1 sx={{
                 }}>Contact me.</h1>
                 <Card>
-                    <form
-                        name="contact"
-                        method="POST"
-                        data-netlify="true"
-                        action="/success/"
-                    >
+                    <Box as="form" onSubmit={handleSubmit}>
+                        <Input type="hidden" name="form-name" value="contact-me" />
                         <Label htmlFor="name">Name</Label>
-                        <Input name="name" id="name" required mb={3} />
+                        <Input name="name" id="name" required mb={3} value={name} onChange={(e) => { setName(e.target.value) }} />
                         <Label htmlFor="email">Email</Label>
-                        <Input name="email" id="email" required mb={3} />
+                        <Input name="email" id="email" required mb={3} value={email} onChange={(e) => { setEmail(e.target.value) }} />
                         <Label htmlFor="message">Message</Label>
-                        <Textarea name="message" id="message" required rows={6} mb={3} />
-                        <Button sx={{cursor: 'pointer'}}>Submit</Button>
-
-                    </form>
+                        <Textarea name="message" id="message" required rows={6} mb={3} value={message} onChange={(e) => { setMessage(e.target.value) }} />
+                        <Button type="submit" sx={{ cursor: 'pointer' }}>Submit</Button>
+                    </Box>
                 </Card>
             </Box>
-
-
-
         </Layout>
     )
 }
