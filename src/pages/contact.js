@@ -52,7 +52,7 @@ const ContactPage = () => {
                 <h1 sx={{
                 }}>Contact me.</h1>
                 <Card>
-                    <Box as="form" onSubmit={handleSubmit}>
+                    <Box as="form" onSubmit={handleSubmit} name='contact-me' data-netlify="true">
                         <Input type="hidden" name="form-name" value="contact-me" />
                         <Label htmlFor="name">Name</Label>
                         <Input name="name" id="name" required mb={3} value={name} onChange={(e) => { setName(e.target.value) }} />
