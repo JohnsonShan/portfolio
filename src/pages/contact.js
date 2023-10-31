@@ -27,13 +27,14 @@ const ContactPage = () => {
         e.preventDefault();
         // console.log(name, email, message)
         const formData = new FormData();
+        formData.append('form-name', 'contact-me')
         formData.append('name', name)
         formData.append('email', email)
         formData.append('message', message)
 
         console.log(new URLSearchParams(formData).toString())
         console.log('Submitted')
-        
+
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
