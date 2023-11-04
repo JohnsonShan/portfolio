@@ -26,24 +26,38 @@ const ProjectsPage = () => {
             imageUrl='/images/portfolio.gif'
             title='Portfolio'
             text='A portfolio page for myself.'
-            badges={['React.js', 'Gatsby', 'Netlify', 'Theme UI']}
+            badges={['React.js', 'Gatsby', 'Theme UI', 'Netlify']}
           />
           <ProjectCard
-            url='#'
-            imageUrl='/images/todomobileui.png'
+            url='https://homes-johnsonshans-projects.vercel.app/'
+            imageUrl='/images/homes.gif'
+            title='Homes'
+            text='An Angular app that lists houses for rent'
+            badges={['Angular', 'Vercel']}
+          />
+          <ProjectCard
+            url=''
+            imageUrl='/images/todo-app.png'
             title='To Do List'
             text='Pending revamp to Board.'
-            badges={['React.js', 'Theme UI']}
+            badges={['React.js', 'Next.js']}
           />
 
         </div>
         <div >
           <ProjectCard
-            url='#'
-            imageUrl='/images/myShop.png'
+            url='https://nextjs-dashboard-johnsonshans-projects.vercel.app/'
+            imageUrl='/images/nextjs-dashboard.gif'
+            title='NextJs Dashboard'
+            text='A Financial dashboard.'
+            badges={['React.js', 'Next.js', 'Tailwind', 'Vercel']}
+          />
+          <ProjectCard
+            url=''
+            imageUrl='/images/my-shop.png'
             title='J Pizza'
             text='Pending for revamp.'
-            badges={['React.js', 'Theme UI']}
+            badges={['React.js', 'Next.js']}
           />
         </div>
       </Grid>
