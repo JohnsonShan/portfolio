@@ -52,6 +52,14 @@ const ProjectsPage = () => {
             text='A Financial dashboard.'
             badges={['React.js', 'Next.js', 'Tailwind', 'Vercel']}
           />
+
+          <ProjectCard
+            url='https://image-gallery-johnsonshans-projects.vercel.app/'
+            imageUrl='/images/image-gallery.gif'
+            title='Image Gallery'
+            text='A Image Gallery.'
+            badges={['React.js', 'Next.js', 'Tailwind', 'Vercel']}
+          />
           <ProjectCard
             url=''
             imageUrl='/images/my-shop.png'
