@@ -10,7 +10,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Nav = ({ colorMode, handleColorMode }) => {
     const [menu, setMenu] = useState(false)
-    const path = globalHistory.location.pathname
+
+    // const path = globalHistory.location.pathname
+    // console.log(path)
     return (
         <Container py={2} px={2} >
             <Flex>
@@ -40,7 +42,7 @@ const Nav = ({ colorMode, handleColorMode }) => {
                         <NavLink href="/contact" p={2}>
                             Contact
                         </NavLink>
-                        <NavLink href={path} p={2}>
+                        <NavLink href="?r=1" p={2}>
                             <FontAwesomeIcon icon={faCircleHalfStroke} onClick={handleColorMode} size='2x' />
                         </NavLink>
                     </Flex>
@@ -61,7 +63,7 @@ const Nav = ({ colorMode, handleColorMode }) => {
                                 <NavLink href="/contact" p={2} m={4}>
                                     Contact
                                 </NavLink>
-                                <NavLink href={path} p={2}>
+                                <NavLink href="?r=1" p={2}>
                                     <FontAwesomeIcon icon={faCircleHalfStroke} onClick={handleColorMode} size='2x' />
                                 </NavLink>
                             </Box>
@@ -73,6 +75,4 @@ const Nav = ({ colorMode, handleColorMode }) => {
         </Container>
     )
 }
-
-
 export default Nav
