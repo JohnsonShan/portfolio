@@ -4,6 +4,7 @@ import { Container, Flex, Box, NavLink } from 'theme-ui'
 
 import { faLinkedinIn, faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Footer = () => (
     <Container py={2} px={2}>
         <Box sx={{
