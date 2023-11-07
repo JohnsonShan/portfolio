@@ -22,5 +22,13 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-6564397760569713`
+      },
+    },
+    'gatsby-plugin-postcss',
+
   ],
 };

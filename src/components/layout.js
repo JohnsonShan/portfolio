@@ -1,12 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Container, Flex, Box, NavLink } from 'theme-ui'
+import { useColorMode, ThemeUIProvider } from 'theme-ui'
 
-import { Link, useStaticQuery, graphql } from 'gatsby'
 import Nav from './nav'
 import Background from './background'
 import Footer from './footer'
+
 const Layout = ({ pageTitle, children }) => {
+  const [colorMode, setColorMode] = useColorMode('light')
+
+  const handleColorMode = () => {
+    setColorMode(colorMode === 'light' ? 'dark' : 'light')
+  };
   return (
     <div sx={{
       position: 'relative',
@@ -24,7 +30,7 @@ const Layout = ({ pageTitle, children }) => {
         position: 'relative',
         maxWidth: '1000px',
       }}>
-        <Nav />
+        <Nav colorMode={colorMode} handleColorMode={handleColorMode} />
         <Container sx={{
           alignItems: 'center',
           maxWidth: '800px',
