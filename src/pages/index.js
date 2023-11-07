@@ -5,10 +5,7 @@ import { Container, Flex, Box, NavLink } from 'theme-ui'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
-import { faLinkedinIn, faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Forward } from "../styles/animations"
 
