@@ -1,15 +1,15 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Container, Flex, Box, NavLink, MenuButton } from 'theme-ui'
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 
 // import { faRobot } from '@fortawesome/free-brands-svg-icons'
-import { faRobot, faBars, faX } from '@fortawesome/free-solid-svg-icons'
+import { faRobot, faBars, faX, faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-const Nav = ({ colorMode, handleColorMode }) => {
+const Nav = ({ handleColorMode }) => {
     const [menu, setMenu] = useState(false)
-
-    console.log(colorMode, handleColorMode)
+    const pathname = window.location.pathname
+    console.log(pathname)
     return (
         <Container py={2} px={2} >
             <Flex>
@@ -39,11 +39,9 @@ const Nav = ({ colorMode, handleColorMode }) => {
                         <NavLink href="/contact" p={2}>
                             Contact
                         </NavLink>
-                        <button
-                            onClick={handleColorMode}
-                        >
-                            Toggle {colorMode}
-                        </button>
+                        <NavLink href={pathname} p={2}>
+                            <FontAwesomeIcon icon={faCircleHalfStroke} onClick={handleColorMode} size='2x'/>
+                        </NavLink>
                     </Flex>
                     {
                         menu
