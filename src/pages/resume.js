@@ -5,11 +5,7 @@ import { Embed, Card, Image, Text, Container, Flex, Box, NavLink } from 'theme-u
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 const ResumePage = () => {
-    const getHostName = () => {
-        if (typeof window !== 'undefined') {
-          return window?.location?.hostname || document?.location?.hostname || 'https://lustrous-torte-4c1709.netlify.app/';
-        }
-      }
+
     return (
         <Layout>
             <Box sx={{
