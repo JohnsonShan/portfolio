@@ -22,7 +22,7 @@ const ProjectsPage = () => {
         }}>
         <div >
           <ProjectCard
-            url='https://lustrous-torte-4c1709.netlify.app/'
+            url='https://johnsonshan-portfolio.netlify.app/'
             imageUrl='/images/portfolio.gif'
             title='Portfolio'
             text='A portfolio page for myself.'
@@ -36,11 +36,19 @@ const ProjectsPage = () => {
             badges={['Angular', 'Vercel']}
           />
           <ProjectCard
+            url='https://github.com/JohnsonShan/express-locallibrary'
+            imageUrl='/images/express-libaray.gif'
+            title='Express Libaray'
+            text='A Libaray RESTful CRUD application.'
+            badges={['Node.js', 'Express', 'RESTful']}
+          />
+          
+          <ProjectCard
             url=''
             imageUrl='/images/todo-app.png'
             title='To Do List'
-            text='Pending revamp to Board.'
-            badges={['React.js', 'Next.js']}
+            text='A To Do app with severless backend.'
+            badges={['React.js', 'Next.js', 'Vercel']}
           />
 
         </div>
@@ -52,7 +60,6 @@ const ProjectsPage = () => {
             text='A Financial dashboard.'
             badges={['React.js', 'Next.js', 'Tailwind', 'Vercel']}
           />
-
           <ProjectCard
             url='https://image-gallery-johnsonshans-projects.vercel.app/'
             imageUrl='/images/image-gallery.gif'
@@ -61,12 +68,26 @@ const ProjectsPage = () => {
             badges={['React.js', 'Next.js', 'Tailwind', 'Vercel']}
           />
           <ProjectCard
+            url='https://github.com/JohnsonShan/django-t'
+            imageUrl='/images/django-admin.gif'
+            title='Django app'
+            text='A Django app with admin portal.'
+            badges={['Python', 'Django']}
+          />
+          <ProjectCard
+            url='https://test.pypi.org/project/django-polls-b081148/0.0.1/'
+            imageUrl='/images/django-polls.png'
+            title='Django polls package'
+            text='A Python package on TestPyPI.'
+            badges={['Python', 'Package', 'TestPyPI']}
+          />
+          {/* <ProjectCard
             url=''
             imageUrl='/images/my-shop.png'
             title='J Pizza'
             text='Pending for revamp.'
             badges={['React.js', 'Next.js']}
-          />
+          /> */}
         </div>
       </Grid>
 
