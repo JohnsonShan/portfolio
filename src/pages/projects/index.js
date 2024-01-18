@@ -22,7 +22,7 @@ const ProjectsPage = () => {
         }}>
         <div >
           <ProjectCard
-            url='https://johnsonshan-portfolio.netlify.app/'
+            url='https://github.com/JohnsonShan/portfolio'
             imageUrl='/images/portfolio.gif'
             title='Portfolio'
             text='A portfolio page for myself.'
@@ -43,13 +43,13 @@ const ProjectsPage = () => {
             badges={['Node.js', 'Express', 'RESTful']}
           />
           
-          <ProjectCard
+          {/* <ProjectCard
             url=''
             imageUrl='/images/todo-app.png'
             title='To Do List'
             text='A To Do app with severless backend.'
             badges={['React.js', 'Next.js', 'Vercel']}
-          />
+          /> */}
 
         </div>
         <div >

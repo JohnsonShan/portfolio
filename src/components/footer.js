@@ -11,7 +11,7 @@ const Footer = () => (
             alignItems: 'center',
             display:'flex',
             justifyContent: 'center',
-            height: '50px',
+            height: '40px',
             [`@media screen and (min-width: 600px)`]: {
                 alignItems: 'center',
                 display: 'block'
@@ -30,6 +30,8 @@ const Footer = () => (
                 <FontAwesomeIcon icon={faInstagram} size="2x" sx={{ pl: 3 }} />
             </NavLink>
         </Box>
+        <p className="my-0">Copyright © 2024. All rights reserved.</p>
+        <p className="mt-0">Written by ReactJS & GastbyJs / Build & Deploy on Netlify / Sourced on GitHub</p>
 
     </Container>
 
