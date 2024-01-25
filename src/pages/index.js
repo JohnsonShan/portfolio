@@ -13,6 +13,7 @@ import { Parallax } from "@react-spring/parallax"
 const IndexPage = () => {
   return (
     <Layout>
+      
       <Box pt='10vh'>
         <h1 className="text-center" >This is JOHNSON SHAN, </h1>
         <p>I am a software engineer with a passion for coding and building awesome things. With a strong background in software development, I specialize in creating a wide range of applications, including both Frontend and Backend projects, Cloud hosting solutions, and CICD DevOps pipelines.</p>

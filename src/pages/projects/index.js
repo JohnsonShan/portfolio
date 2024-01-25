@@ -42,7 +42,7 @@ const ProjectsPage = () => {
             text='A Libaray RESTful CRUD application.'
             badges={['Node.js', 'Express', 'RESTful']}
           />
-          
+
           {/* <ProjectCard
             url=''
             imageUrl='/images/todo-app.png'
@@ -75,19 +75,20 @@ const ProjectsPage = () => {
             badges={['Python', 'Django']}
           />
           <ProjectCard
+            url='https://supabase-next-js-phi.vercel.app/'
+            imageUrl='/images/supabase-next.gif'
+            title='SupaBlog'
+            text='Full Stack Development with Next.js and Supabase'
+            badges={['React.js', 'Next.js', 'Supabase']}
+          />
+          {/* <ProjectCard
             url='https://test.pypi.org/project/django-polls-b081148/0.0.1/'
             imageUrl='/images/django-polls.png'
             title='Django polls package'
             text='A Python package on TestPyPI.'
             badges={['Python', 'Package', 'TestPyPI']}
-          />
-          {/* <ProjectCard
-            url=''
-            imageUrl='/images/my-shop.png'
-            title='J Pizza'
-            text='Pending for revamp.'
-            badges={['React.js', 'Next.js']}
           /> */}
+
         </div>
       </Grid>
 
