@@ -42,7 +42,13 @@ const ProjectsPage = () => {
             text='A Libaray RESTful CRUD application.'
             badges={['Node.js', 'Express', 'RESTful']}
           />
-
+          <ProjectCard
+            url='https://supabase-next-js-phi.vercel.app/'
+            imageUrl='/images/supabase-next.gif'
+            title='SupaBlog'
+            text='Full Stack Development with Next.js and Supabase'
+            badges={['React.js', 'Next.js', 'Supabase']}
+          />
           {/* <ProjectCard
             url=''
             imageUrl='/images/todo-app.png'
@@ -52,7 +58,15 @@ const ProjectsPage = () => {
           /> */}
 
         </div>
+        
         <div >
+        <ProjectCard
+            url='https://nextjs-chat-johnsonshans-projects.vercel.app/'
+            imageUrl='/images/nextjs-chatbot.gif'
+            title='NextJs Chatbot'
+            text='A Chatbot integrate with OpenAi Api.'
+            badges={['OpenAi', 'OAuth 2.0', 'React.js', 'Next.js']}
+          />
           <ProjectCard
             url='https://nextjs-dashboard-johnsonshans-projects.vercel.app/'
             imageUrl='/images/nextjs-dashboard.gif'
@@ -73,13 +87,6 @@ const ProjectsPage = () => {
             title='Django app'
             text='A Django app with admin portal.'
             badges={['Python', 'Django']}
-          />
-          <ProjectCard
-            url='https://supabase-next-js-phi.vercel.app/'
-            imageUrl='/images/supabase-next.gif'
-            title='SupaBlog'
-            text='Full Stack Development with Next.js and Supabase'
-            badges={['React.js', 'Next.js', 'Supabase']}
           />
           {/* <ProjectCard
             url='https://test.pypi.org/project/django-polls-b081148/0.0.1/'
